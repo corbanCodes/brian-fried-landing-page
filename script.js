@@ -44,8 +44,8 @@ if (form) {
                     <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="url(#gradient)" stroke-width="2">
                         <defs>
                             <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                                <stop offset="0%" style="stop-color:#6366f1"/>
-                                <stop offset="100%" style="stop-color:#a855f7"/>
+                                <stop offset="0%" style="stop-color:#f4d03f"/>
+                                <stop offset="100%" style="stop-color:#d4af37"/>
                             </linearGradient>
                         </defs>
                         <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
@@ -72,7 +72,7 @@ if (form) {
                 font-family: 'Space Grotesk', sans-serif;
                 font-size: 2rem;
                 margin-bottom: 16px;
-                background: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);
+                background: linear-gradient(135deg, #f4d03f 0%, #d4af37 50%, #b8960f 100%);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
             }
@@ -82,7 +82,7 @@ if (form) {
                 margin-bottom: 8px;
             }
             .success-note {
-                color: #8b5cf6 !important;
+                color: #d4af37 !important;
                 font-weight: 600;
             }
         `;
