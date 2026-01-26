@@ -729,8 +729,53 @@ h3 {
 .register-content > p {
     color: var(--text-secondary);
     font-size: 1.1rem;
-    margin-bottom: 32px;
+    margin-bottom: 16px;
     line-height: 1.7;
+}
+
+.event-date {
+    font-size: 1.3rem !important;
+    color: var(--accent-2) !important;
+    margin-bottom: 20px !important;
+}
+
+.event-hook {
+    font-style: italic;
+    margin-bottom: 28px !important;
+}
+
+.event-topics {
+    margin-bottom: 28px;
+}
+
+.event-topics h4 {
+    color: var(--text-primary);
+    margin-bottom: 16px;
+    font-size: 1.1rem;
+}
+
+.speaker-bio {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: 20px;
+    margin-bottom: 24px;
+}
+
+.speaker-bio p {
+    font-size: 0.95rem !important;
+    margin-bottom: 0 !important;
+}
+
+.event-free-badge {
+    display: inline-block;
+    background: var(--gradient-primary);
+    color: #0a0a0a !important;
+    font-weight: 600;
+    padding: 8px 20px;
+    border-radius: 100px;
+    font-size: 0.9rem !important;
+    margin-bottom: 0 !important;
 }
 
 .benefits-list {
