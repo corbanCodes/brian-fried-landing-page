@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | Brian Fried - The Inventor Coach</title>
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1162975643777881');
+    fbq('track', 'PageView');
+    fbq('track', 'Lead');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1162975643777881&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .thank-you-section {
+            min-height: 100vh;
+            padding: 160px 0 100px;
+            display: flex;
+            align-items: center;
+        }
+        .thank-you-content {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .checkmark-circle {
+            width: 140px;
+            height: 140px;
+            background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 40px;
+            box-shadow: 0 0 60px rgba(34, 197, 94, 0.4);
+            animation: scaleIn 0.5s ease-out;
+        }
+        .checkmark-circle svg {
+            width: 70px;
+            height: 70px;
+            stroke: white;
+            stroke-width: 3;
+            fill: none;
+            animation: drawCheck 0.6s ease-out 0.3s forwards;
+            stroke-dasharray: 100;
+            stroke-dashoffset: 100;
+        }
+        @keyframes scaleIn {
+            0% { transform: scale(0); opacity: 0; }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); opacity: 1; }
+        }
+        @keyframes drawCheck {
+            to { stroke-dashoffset: 0; }
+        }
+        .thank-you-content h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            margin-bottom: 16px;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .thank-you-subtitle {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+        }
+        .thank-you-desc {
+            color: var(--text-muted);
+            line-height: 1.7;
+            margin-bottom: 48px;
+        }
+        .thank-you-next {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: 32px;
+            margin-bottom: 40px;
+            text-align: left;
+        }
+        .thank-you-next h3 {
+            text-align: center;
+            margin-bottom: 24px;
+            color: var(--text-primary);
+        }
+        .thank-you-next ul {
+            list-style: none;
+        }
+        .thank-you-next li {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 16px;
+            color: var(--text-secondary);
+        }
+        .thank-you-next li:last-child {
+            margin-bottom: 0;
+        }
+        .thank-you-next svg {
+            color: #22c55e;
+            flex-shrink: 0;
+        }
+        /* Confetti */
+        .confetti-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+            z-index: 1000;
+        }
+        .confetti {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            opacity: 0;
+            animation: confetti-fall 3s ease-out forwards;
+        }
+        @keyframes confetti-fall {
+            0% {
+                opacity: 1;
+                transform: translateY(-100px) rotate(0deg);
+            }
+            100% {
+                opacity: 0;
+                transform: translateY(100vh) rotate(720deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-gradient"></div>
+    <div class="grain-overlay"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="inventor-coach.png" alt="Brian Fried - The Inventor Coach" class="logo-img">
+            </a>
+        </div>
+    </nav>
+
+    <!-- Confetti Container -->
+    <div class="confetti-container" id="confetti"></div>
+
+    <!-- Thank You Section -->
+    <section class="thank-you-section">
+        <div class="container">
+            <div class="thank-you-content">
+                <div class="checkmark-circle">
+                    <svg viewBox="0 0 24 24">
+                        <polyline points="4 12 9 17 20 6"/>
+                    </svg>
+                </div>
+                <h1>Thank You!</h1>
+                <p class="thank-you-subtitle">You're registered for the free webinar</p>
+                <p class="thank-you-desc">Check your email for confirmation and details about the upcoming session. We can't wait to help you turn your invention idea into reality!</p>
+                
+                <div class="thank-you-next">
+                    <h3>What's Next?</h3>
+                    <ul>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            <span>Check your inbox for a confirmation email</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            <span>Add the webinar to your calendar</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            <span>Prepare your questions for the live Q&A</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <a href="index.html" class="btn btn-primary">
+                    <span>Back to Homepage</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Brian Fried. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Confetti animation
+        function createConfetti() {
+            const container = document.getElementById('confetti');
+            const colors = ['#d4af37', '#f4d03f', '#22c55e', '#3b82f6', '#ec4899', '#8b5cf6'];
+            const shapes = ['square', 'circle'];
+            
+            for (let i = 0; i < 100; i++) {
+                const confetti = document.createElement('div');
+                confetti.className = 'confetti';
+                
+                const color = colors[Math.floor(Math.random() * colors.length)];
+                const shape = shapes[Math.floor(Math.random() * shapes.length)];
+                const left = Math.random() * 100;
+                const delay = Math.random() * 0.5;
+                const size = Math.random() * 10 + 5;
+                
+                confetti.style.left = left + '%';
+                confetti.style.backgroundColor = color;
+                confetti.style.width = size + 'px';
+                confetti.style.height = size + 'px';
+                confetti.style.animationDelay = delay + 's';
+                confetti.style.borderRadius = shape === 'circle' ? '50%' : '0';
+                
+                container.appendChild(confetti);
+            }
+            
+            // Remove confetti after animation
+            setTimeout(() => {
+                container.innerHTML = '';
+            }, 4000);
+        }
+        
+        // Trigger confetti on page load
+        window.addEventListener('load', createConfetti);
+    </script>
+</body>
+</html>

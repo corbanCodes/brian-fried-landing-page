@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Animated Background -->
+    <!-- Animated Background  test -->
     <div class="bg-gradient"></div>
     <div class="grain-overlay"></div>
 
@@ -325,7 +325,7 @@
                 </div>
 
                 <div class="register-form-wrapper">
-                    <form class="register-form" id="webinar-form">
+                    <form class="register-form" id="webinar-form" action="https://formspree.io/f/xojdnvzv" method="POST">
                         <h3>Save Your Spot</h3>
                         <p class="form-subtitle">Join thousands of inventors who've taken the first step</p>
                         
@@ -341,15 +341,48 @@
                             <input type="email" id="email" name="email" placeholder="Email address" required>
                         </div>
                         <div class="form-group">
-                            <select id="stage" name="stage" required>
-                                <option value="">Where are you in your journey?</option>
-                                <option value="idea">Just have an idea</option>
-                                <option value="research">Researching & planning</option>
-                                <option value="prototype">Have a prototype</option>
-                                <option value="patent">Patent or patent pending</option>
-                                <option value="market">Ready for market</option>
-                            </select>
+                            <input type="tel" id="phone" name="phone" placeholder="Phone number (optional)">
                         </div>
+
+                        <div class="form-questionnaire">
+                            <p class="questionnaire-label">Optional: Help us understand your journey</p>
+                            
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="q1_has_idea" value="yes">
+                                    <span>Have you ever had an idea for an invention but weren't sure what to do about it?</span>
+                                </label>
+                            </div>
+                            
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="q2_sought_guidance" value="yes">
+                                    <span>Have you ever sought guidance on how to bring an invention to market?</span>
+                                </label>
+                            </div>
+                            
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="q3_worried_stolen" value="yes">
+                                    <span>Are you worried about your idea being stolen or copied?</span>
+                                </label>
+                            </div>
+                            
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="q4_confused_patents" value="yes">
+                                    <span>Do you feel confused about patents, prototypes, or licensing?</span>
+                                </label>
+                            </div>
+                            
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="q5_ready_action" value="yes">
+                                    <span>Are you ready to take action but just need the right roadmap?</span>
+                                </label>
+                            </div>
+                        </div>
+
                         <button type="submit" class="btn btn-primary btn-full">
                             <span>Register Now — It's Free</span>
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
